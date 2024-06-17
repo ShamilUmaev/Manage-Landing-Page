@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --dark-grayish-blue: hsl(227, 12%, 61%);
+    --dark-blue: #242D52;
+    --bg-primary: #F3603C;
+    --bg-secondary: #FFF0EC;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,59 +20,125 @@ html {
 body {
     font-family: "Be Vietnam Pro", sans-serif;
     font-size: 1.6rem;
+    min-height: 100vh;
+}
+
+h2, h3, h4 {
+    color: var(--dark-blue);
+}
+
+p {
+    color: var(--dark-grayish-blue);
+    font-weight: 300;
+    line-height: 1.8em;
 }
 
 .page-outer-container {
-    width: 100%;
-    height: 100vh;
+    /* width: 100%;
+    height: 100vh; */
     min-width: 375px;
-    background-image: url('./images/bg-tablet-pattern.svg'), url('./images/bg-tablet-pattern-small.svg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: top right, bottom right;
+    background-image: url('./images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
-.page-inner-container {
+.inner-container {
     width: 90%;
     margin: 0 auto;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
 }
 
 .nav {
+    padding-top: 5rem;
     display: flex;
     justify-content: space-between;
+}
+
+.hero-section {
+    background-image: url('./images/bg-tablet-pattern-small.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-bottom: 12rem;
 }
 
 .stats-container {
     margin: 5rem 0 1rem;
 }
 
-.intro-text {
+.intro-text-container {
 }
 
-.intro-text h2 {
-    color: #242D52;
+.intro-text-container h2 {
     font-size: 4rem;
     line-height: 1.4em;
     text-align: center;
 }
 
-.intro-text p {
-    color: hsl(227, 12%, 61%);
-    font-weight: 300;
+.intro-text-container p {
     text-align: center;
-    line-height: 1.8em;
     margin: 1rem 0 3rem;
 }
 
 .btn-primary {
-    background-color: #F3603C;
+    background-color: var(--bg-primary);
     border: none;
     padding: 1.5rem 3.3rem;
     border-radius: 22px;
     color: #FCF6F5;
     font-size: 1.3rem;
     font-weight: bold;
-    box-shadow: 0 15px 15px -10px #FF9F8E;
+    box-shadow: 0 15px 15px -10px var(--bg-primary);
     display: block;
     margin: 0 auto;
+}
+
+.about-section {
+    
+}
+
+.about-section h3 {
+    text-align: center;
+    font-size: 3.2rem;
+    padding: 0 1rem;
+    line-height: 1.4em;
+}
+
+.about-section p {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.about-section-header {
+    margin-bottom: 7rem;
+}
+
+.benefit-outer-container {
+    margin-bottom: 4.5rem;
+}
+
+.benefit-header-container .inner-container {
+    width: 95%;
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+    column-gap: 1.7rem;
+    background-color: var(--bg-secondary);
+    border-radius: 3.9rem 0 0 3.9rem;
+}
+
+.benefit-header-number {
+    padding: 1rem 3rem;
+    border-radius: 3.9rem;
+    background-color: var(--bg-primary);
+    color: #fff;
+    font-weight: 600;
+}
+
+.benefit-body-text p {
+    text-align: left;
+    /* margin-top: 1.5rem; */
+}
+
+.benefit-header-container .inner-container {
+    
 }
