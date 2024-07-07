@@ -79,17 +79,25 @@ p {
     margin: 1rem 0 3rem;
 }
 
-.btn-primary {
-    background-color: var(--bg-primary);
+.btn {
     border: none;
     padding: 1.5rem 3.3rem;
     border-radius: 22px;
-    color: #FCF6F5;
     font-size: 1.3rem;
     font-weight: bold;
     box-shadow: 0 15px 15px -10px var(--bg-primary);
     display: block;
     margin: 0 auto;
+}
+
+.btn-get-started-primary {
+    background-color: var(--bg-primary);
+    color: #FCF6F5;
+}
+
+.btn-get-started-secondary {
+    background-color: #fff;
+    color: var(--bg-primary);
 }
 
 .about-section {
@@ -177,6 +185,33 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.testimonials-section .btn-get-started {
+.testimonials-section .btn-get-started-primary {
     margin-top: 5rem;
+}
+
+
+.get-started-section {
+    margin-top: 5rem;
+    height: 405px;
+    background-color: var(--bg-primary);
+    background-image: url('./images/bg-simplify-section-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-started-section .inner-container {
+   
+}
+
+.get-started-section h4 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+}
+
+.get-started-section .btn-get-started-secondary {
+    margin-top: 3rem;
 }
