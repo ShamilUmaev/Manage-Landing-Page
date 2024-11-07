@@ -195,7 +195,7 @@ a {
 }
 
 .testimonials-section .btn-get-started-primary {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 
@@ -302,4 +302,9 @@ input[type="submit"] {
 .copyright-footer {
     margin-top: 6rem;
     text-align: center;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) {
+
 }

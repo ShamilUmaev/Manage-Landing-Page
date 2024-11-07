@@ -13,6 +13,17 @@ const swiper = new Swiper('.swiper', {
         disableOnInteraction: false,
     },
 
-    speed: 5000
+    speed: 1000,
+
+    breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1250: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
   });
   
