@@ -158,6 +158,10 @@ a {
 
 }
 
+.swiper {
+    height: 350px;
+}
+
 .testimonials-section .inner-container {
 }
 
@@ -299,8 +303,3 @@ input[type="submit"] {
     margin-top: 6rem;
     text-align: center;
 }
-
-.swiper {
-    /* width: 600px; */
-    height: 350px;
-  }
