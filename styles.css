@@ -70,6 +70,10 @@ a {
     margin: 5rem 0 1rem;
 }
 
+.stats-img {
+    width: 100%;
+}
+
 .intro-text-container {
 }
 
@@ -149,20 +153,14 @@ a {
 
 .benefit-body-text p {
     text-align: left;
-    /* margin-top: 1.5rem; */
 }
 
 .testimonials-section {
     margin-top: 6rem;
-    position: relative;
-
-}
-
-.swiper {
-    height: 350px;
 }
 
 .testimonials-section .inner-container {
+    overflow: hidden;
 }
 
 .testimonials-section h4 {
@@ -171,38 +169,52 @@ a {
     margin-bottom: 8rem;
 }
 
-.testimonials-section ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    row-gap: 7rem;
+.swiper {
+    /* height: 300px; */
+    overflow: visible;
 }
 
-.testimonials-section li {
+.swiper-slide {
     background-color: #FAFAFA;
     text-align: center;
     position: relative;
-    padding: 6rem 2rem 3rem;
-    text-align: center;
+    padding: 3.2rem 2.7rem;
 }
 
-.testimonials-section li img {
+.swiper-slide img {
     width: 72px;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 50;
     transform: translate(-50%, -50%);
+}
+
+.swiper-slide h5 {
+    font-size: 1.6rem;
+    margin: 2.5rem 0;
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 2rem;
+}
+
+.swiper-pagination-bullet {
+    border: 2px solid var(--bg-primary);
+    background-color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--bg-primary);
 }
 
 .testimonials-section .btn-get-started-primary {
     margin-top: 2rem;
 }
 
-
 .get-started-section {
     margin-top: 5rem;
     padding: 9rem 2rem;
-    /* height: 405px; */
     background-color: var(--bg-primary);
     background-image: url('./images/bg-simplify-section-mobile.svg');
     background-repeat: no-repeat;
@@ -306,5 +318,5 @@ input[type="submit"] {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 768px) {
-
+    
 }
