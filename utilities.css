@@ -1,0 +1,17 @@
+.hide-mobile-menu {
+    transform: translateY(-1000px);
+    transition: transform .5s ease-in-out;
+}
+
+.show-mobile-menu {
+    transform: translateY(0);
+    transition: transform .5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

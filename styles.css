@@ -38,9 +38,22 @@ a {
     color: #fff;
 }
 
+.overlay {
+    position: relative;
+}
+
+.overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%);
+    z-index: 3;
+}
+
 .page-outer-container {
-    /* width: 100%;
-    height: 100vh; */
     min-width: 375px;
     background-image: url('./images/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
@@ -50,13 +63,39 @@ a {
 .inner-container {
     width: 90%;
     margin: 0 auto;
-    /* padding-top: 5rem; */
 }
 
-.nav {
+.main-nav {
     padding-top: 5rem;
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+
+.hamburger-btn,
+.close-mobile-menu-btn {
+    z-index: 6;
+}
+
+.main-nav-list {
+    list-style-type: none;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 12rem;
+    z-index: 999;
+    padding: 3.5rem;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px 0 #505662;
+}
+
+.main-nav-link {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.main-nav-link a {
+    color: var(--dark-blue);
 }
 
 .hero-section {
@@ -170,7 +209,6 @@ a {
 }
 
 .swiper {
-    /* height: 300px; */
     overflow: visible;
 }
 
