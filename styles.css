@@ -57,7 +57,10 @@ a {
     min-width: 375px;
     background-image: url('./images/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
-    background-position: top right;
+    background-size: 100%;
+    background-position: calc(100% + 80px) calc(0% - 30px); /* Moves 50px further right */
+    padding-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 
 .inner-container {
@@ -99,10 +102,12 @@ a {
 }
 
 .hero-section {
-    background-image: url('./images/bg-tablet-pattern-small.svg');
+    background-image: url('./images/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
-    background-position: bottom right;
-    padding-bottom: 12rem;
+    background-size: 100%;
+    background-position: calc(100% + 245px) bottom; /* Moves 50px further right */
+    padding-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 
 .stats-container {
@@ -356,5 +361,5 @@ input[type="submit"] {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 768px) {
-    
+ 
 }
