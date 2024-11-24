@@ -464,7 +464,7 @@ input[type="submit"] {
     }
 
     .hero-section {
-        padding-top: 5rem;
+        padding-top: 9rem;
         background-image: none;
     }
 
@@ -496,6 +496,10 @@ input[type="submit"] {
 
     .stats-container {
         width: 50%;
+    }
+
+    .stats-img {
+        scale: 1.07;
     }
 
     .about-section > .inner-container {
@@ -540,6 +544,22 @@ input[type="submit"] {
 
     .testimonials-section {
         margin: 10rem 0 17rem;
+    }
+
+    .get-started-section > .inner-container {
+        display: flex;       
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .get-started-section h4 {
+        text-align: left;
+        margin: 0;
+    }
+
+    .get-started-section .btn-get-started-secondary {
+        margin: 0;
     }
 }
 
