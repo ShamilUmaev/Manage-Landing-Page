@@ -155,8 +155,13 @@ a {
     color: var(--bg-primary);
 }
 
-.about-section {
-    
+.about-section .inner-container {
+    width: 100%;
+}
+
+.about-section-header {
+    width: 90%;
+    margin: 0 auto 7rem;
 }
 
 .about-section h3 {
@@ -169,10 +174,6 @@ a {
 .about-section p {
     margin-top: 2.5rem;
     text-align: center;
-}
-
-.about-section-header {
-    margin-bottom: 7rem;
 }
 
 .benefit-outer-container {
@@ -199,6 +200,11 @@ a {
 
 .benefit-body-text p {
     text-align: left;
+}
+
+.benefit-body-text .inner-container {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .testimonials-section {
@@ -415,8 +421,15 @@ input[type="submit"] {
     }
 
     .page-outer-container {
-        background-size: 88%;
-        background-position: calc(100% + 420px) calc(0% - 330px);
+        background-size: 900px;
+        /* background-image: url('./images/bg-tablet-pattern.svg');
+        background-position: calc(100% + 420px) calc(0% - 330px); */
+        background-image: url('./images/bg-tablet-pattern.svg'), url('./images/bg-tablet-pattern.svg');
+        background-position: calc(100% + 420px) calc(0% - 330px), calc(0% - 480px) calc(0% + 1020px);
+    }
+
+    .inner-container {
+        max-width: 1440px;
     }
 
     .mobile-menu-wrapper {
@@ -459,14 +472,15 @@ input[type="submit"] {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        justify-content: space-between;
     }
 
     .intro-text-container {
-        max-width: 38rem;
+        width: 45%;
+        margin: 0;
     }
 
     .intro-text-container h2 {
-        /* font-size: 4.5rem; */
         line-height: 1.1em;
         text-align: left;
     }
@@ -479,5 +493,50 @@ input[type="submit"] {
     .intro-text-container .btn-get-started-primary {
         margin: 0;
     }
+
+    .stats-container {
+        width: 50%;
+    }
+
+    .about-section > .inner-container {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .about-section-header {
+        max-width: none;  
+        width: 42%;
+        margin: 0;
+    }
+
+    .about-section h3 {
+        text-align: left;
+        padding: 0;
+    }
+
+    .about-section p {
+        text-align: left;
+    }
+
+    .about-section-body {
+        width: 50%;
+    }
+
+    .benefit-header-container .inner-container {
+        background-color: transparent;
+        margin: 0;
+    }
+
+    .benefit-body-text .inner-container {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .benefit-body-text p {
+        padding-left: 9.47188rem;
+    }
 }
+
 
