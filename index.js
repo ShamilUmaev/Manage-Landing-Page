@@ -31,6 +31,7 @@ const hamburgerBtn = document.querySelector('.hamburger-btn');
 const closeBtn = document.querySelector('.close-mobile-menu-btn');
 const mobileNav = document.querySelector('.main-nav-list');
 const pageContainer = document.querySelector('.page-outer-container');
+const overlay = document.querySelector('.page-outer-container');
 
 const showMobileNav = function () {
     hamburgerBtn.classList.remove('visible');
@@ -52,5 +53,14 @@ const hideMobileNav = function () {
     pageContainer.classList.remove('overlay');
 }
 
-hamburgerBtn.addEventListener('click', showMobileNav);
-closeBtn.addEventListener('click', hideMobileNav);
+const init = function () {
+  hamburgerBtn.addEventListener('click', showMobileNav);
+  closeBtn.addEventListener('click', hideMobileNav);
+  document.body.addEventListener('click', (e) => {
+    if(e.target.classList.contains('overlay')) {
+      hideMobileNav();
+    }
+  });
+}
+
+init();
