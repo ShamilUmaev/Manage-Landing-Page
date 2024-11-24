@@ -208,7 +208,7 @@ a {
 }
 
 .testimonials-section {
-    margin-top: 6rem;
+    margin: 6rem 0;
 }
 
 .testimonials-section .inner-container {
@@ -264,7 +264,7 @@ a {
 }
 
 .get-started-section {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     padding: 9rem 2rem;
     background-color: var(--bg-primary);
     background-image: url('./images/bg-simplify-section-mobile.svg');
@@ -536,6 +536,10 @@ input[type="submit"] {
 
     .benefit-body-text p {
         padding-left: 9.47188rem;
+    }
+
+    .testimonials-section {
+        margin: 10rem 0 17rem;
     }
 }
 
