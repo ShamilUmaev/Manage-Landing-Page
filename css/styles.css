@@ -55,7 +55,7 @@ a {
 
 .page-outer-container {
     min-width: 375px;
-    background-image: url('./images/bg-tablet-pattern.svg');
+    background-image: url('../images/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: calc(100% + 80px) calc(0% - 30px); /* Moves 50px further right */
@@ -104,7 +104,7 @@ a {
 }
 
 .hero-section {
-    background-image: url('./images/bg-tablet-pattern.svg');
+    background-image: url('../images/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: calc(100% + 245px) bottom; /* Moves 50px further right */
@@ -267,7 +267,7 @@ a {
     /* margin-top: 5rem; */
     padding: 9rem 2rem;
     background-color: var(--bg-primary);
-    background-image: url('./images/bg-simplify-section-mobile.svg');
+    background-image: url('../images/bg-simplify-section-mobile.svg');
     background-repeat: no-repeat;
     background-position: left center;
     display: flex;
@@ -374,15 +374,11 @@ input[type="submit"] {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .page-outer-container {
-        /* background-image: url('./images/bg-tablet-pattern.svg'); */
         background-size: 85%;
         background-position: calc(100% + 90px) calc(0% - 60px); /* Moves 50px further right */
-        /* padding-bottom: 10rem;
-        margin-bottom: 3rem; */
     }
 
     .hero-section {
-        /* background-image: url('./images/bg-tablet-pattern.svg'); */
         background-size: 75%;
         background-position: calc(100% + 250px) bottom; /* Moves 50px further right */
         padding-bottom: 10rem;
@@ -426,9 +422,7 @@ input[type="submit"] {
 
     .page-outer-container {
         background-size: 900px;
-        /* background-image: url('./images/bg-tablet-pattern.svg');
-        background-position: calc(100% + 420px) calc(0% - 330px); */
-        background-image: url('./images/bg-tablet-pattern.svg'), url('./images/bg-tablet-pattern.svg');
+        background-image: url('../images/bg-tablet-pattern.svg'), url('../images/bg-tablet-pattern.svg');
         background-position: calc(100% + 420px) calc(0% - 330px), calc(0% - 480px) calc(0% + 1020px);
     }
 
@@ -553,7 +547,7 @@ input[type="submit"] {
     .get-started-section {
         justify-content: flex-start;
         padding: 9rem 0;
-        background: var(--bg-primary) url("./images/bg-simplify-section-desktop.svg") no-repeat 30% 80%; 
+        background: var(--bg-primary) url("../images/bg-simplify-section-desktop.svg") no-repeat 30% 80%; 
     }
 
     .get-started-section > .inner-container {
