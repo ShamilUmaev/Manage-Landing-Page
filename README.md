@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ShamilUmaev/Manage-Landing-Page)
+- Solution URL: [https://github.com/ShamilUmaev/Manage-Landing-Page](https://github.com/ShamilUmaev/Manage-Landing-Page)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
