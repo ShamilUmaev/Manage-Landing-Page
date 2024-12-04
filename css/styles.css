@@ -70,6 +70,7 @@ a {
     padding-top: 5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
 }
 
@@ -406,9 +407,7 @@ input[type="submit"] {
 }
 
 @media only screen and (min-width: 768px) {
-    html {
-        /* font-size: 65%; */
-    }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -434,10 +433,6 @@ input[type="submit"] {
         display: none;
     }
 
-    .main-nav {
-        align-items: center;
-    }
-
     .main-nav .btn-get-started-primary {
         margin: 0;
     }
@@ -461,6 +456,10 @@ input[type="submit"] {
         padding: 0;
     }
 
+    .logo img {
+        padding-top: 1rem;
+    }
+
     .hero-section {
         padding-top: 9rem;
         background-image: none;
@@ -479,7 +478,8 @@ input[type="submit"] {
     }
 
     .intro-text-container h2 {
-        line-height: 1.1em;
+        font-size: 4.5rem;
+        line-height: 1.2em;
         text-align: left;
     }
 
@@ -542,6 +542,10 @@ input[type="submit"] {
 
     .testimonials-section {
         margin: 10rem 0 17rem;
+    }
+
+    .swiper-backface-hidden .swiper-slide {
+        height: 250px;
     }
 
     .get-started-section {
@@ -611,4 +615,92 @@ input[type="submit"] {
     }
 }
 
+@media only screen and (min-width: 1280px) {
+    .page-outer-container {
+        background-size: 1000px;
+        background-position: calc(100% + 350px) calc(0% - 230px), calc(0% - 380px) calc(0% + 1020px);
+    }
 
+    .desktop-menu-wrapper .main-nav-list {
+        column-gap: 5rem;
+        font-size: 1.8rem;
+    }
+
+    .logo img {
+        width: 18rem;
+    }
+
+    .intro-text-container h2 {
+        font-size: 6rem;
+        line-height: 1.3;
+    }
+
+    .intro-text-container p {
+        font-size: 1.8rem;
+        margin: 4rem 0 5rem;
+    }
+
+    .about-section h3 {
+        font-size: 4.7rem;
+    }
+
+    .about-section p {
+        font-size: 1.8rem;
+    }
+
+    .benefit-header-container h4 {
+        font-size: 1.8rem;
+    }
+
+    .testimonials-section h4 {
+        font-size: 4.5rem;
+        margin-bottom: 10rem;
+    }
+
+    .swiper-slide h5,
+    .swiper-slide p {
+        font-size: 1.8rem;
+    }
+
+    .swiper-pagination {
+        margin-top: 4rem;
+    }
+
+    .testimonials-section .btn-get-started-primary {
+        margin-top: 4rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        border-radius: 30px;
+        font-weight: 500;
+        padding: 1.8rem 3.6rem;
+    }
+
+    .get-started-section h4 {
+        font-size: 5.5rem;
+        max-width: 65rem;
+    }
+
+    .footer {
+        padding: 10rem 0;
+    }
+
+    .social-icons-and-logo-container {
+        max-width: none;
+    }
+
+    .logo-footer {
+        width: 18rem;
+    }
+
+    .social-icons-child-container img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .footer-links-container a {
+        font-size: 1.7rem;
+    }
+
+}
